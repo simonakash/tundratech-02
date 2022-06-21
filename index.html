@@ -1,0 +1,941 @@
+<!doctype html>
+<html class=" overflow-x-hidden" lang="bn">
+    <!--====================head====================-->
+    <head>
+        <meta name="description" content="Rekindle Data">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#4285f4">
+        <meta property="og:image" content="images/logo/logo.png">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="729">
+
+
+
+        <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
+        <link rel="icon" href="images/logo/logo.png" type="image/x-icon">
+        <!--------->
+        <title>Home || Happy Claws Lucky Paws</title>
+
+
+        <!-----Tailwind css---->
+        <link rel="stylesheet" href="output/tailwind.css">
+    </head>
+    <!--====================body====================-->
+    <body class="overflow-x-hidden">
+        <!-- ==========header========== -->
+        <header>
+            <!--========-->
+            <nav class="absolute left-0 right-0 top-0 container xl:max-w-[1170px] mx-auto px-5 sm:px-0 flex items-center justify-between py-5">
+                <!--====logo====-->
+                <a href="/">
+                    <!--========-->
+                    <img height="100%" width="100%" class="lg:w-auto w-4/5 h-auto" src="images/Logo/logo.png" alt="//">
+                </a>
+                <!--====menu====-->
+                <ul class="hidden md:flex text-black lg:space-x-7 space-x-4 font-medium font-mulish lg:text-lg sm:text-base text-sm">
+                    <!---->
+                    <li>
+                        <a class="p-2 bg-rose-550 text-white" href="/">Home</a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a class="p-2 hover:text-rose-550" href="why_wild_matters.html">Why Wild Matters</a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a class="p-2 hover:text-rose-550" href="about_us.html">About Us</a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a class="p-2 hover:text-rose-550" href="faq.html">FAQs</a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a class="p-2 hover:text-rose-550" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!--====Humberger menu====-->
+                <div @click.away="humberger=false" class="block md:hidden" x-data="{humberger: false}">
+                    <!--====menu button====-->
+                    <button @click.prevent="humberger=!humberger" aria-label="Mobile Menu button"
+                        class="outline-none text-black p-1">
+                        <!---->
+                        <svg x-show="humberger===false" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!---->
+                        <svg x-show="humberger===true" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <!--====Mobile menu====-->
+                    <div :class="{'translate-x-0' : humberger, '-translate-x-full': !humberger  }"
+                        class="fixed lg:hidden w-3/5 transform transition-transform duration-700 ease-in-out z-50 bg-sky-100 left-0 top-0 bottom-0 shadow-2xl">
+                        <!--====menu====-->
+                        <div class=" p-5">
+                            <!--====logo====-->
+                            <a href="/">
+                                <!--========-->
+                                <img height="100%" width="100%" class="lg:w-auto w-4/5 max-w-[150px] h-auto" src="images/Logo/logo.png" alt="//">
+                            </a>
+                            <!--========-->
+                            <ul  class="space-y-4 flex flex-col items-start justify-center text-black font-medium font-mulish lg:text-lg sm:text-base text-sm mt-16">
+                                <!---->
+                                <li>
+                                    <a class="p-2 bg-rose-550 text-white" href="/">Home</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="hover:text-rose-550" href="why_wild_matters.html">Why Wild Matters</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="hover:text-rose-550" href="about_us.html">About Us</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="hover:text-rose-550" href="faq.html">FAQs</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="hover:text-rose-550" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--====================main====================-->
+        <main>
+            <!-- ==========section 001========== -->
+            <section class="bg-cover bg-no-repeat bg-center lg:min-h-[940px]" style="background-image:url('images/Home/bg1.jpg');">
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 lg:pt-44 pt-36 grid md:grid-cols-2 grid-cols-1 gap-10">
+                    <!--========-->
+                    <div class="col-span-1">
+                        <!--========-->
+                        <img height="100%" width="100%" class="lg:mt-24 w-auto lg:max-w-[522px] object-contain mx-auto lg:mr-0 lg:ml-auto h-auto" src="images/Home/9.png" alt="//">
+                    </div>
+                    <!--========-->
+                    <div class="lg:ml-16 text-black">
+                        <!--========-->
+                        <h1 class=" font-playfair-display font-black whitespace-nowrap">
+                            <!--========-->
+                            <p class=" lg:text-3xl text-xl">Welcome to</p>
+                            <!--========-->
+                            <p class=" lg:text-6xl text-5xl">Happy Claws<br>Lucky Paws</p>
+                        </h1>
+                        <!--========-->
+                        <p class="lg:mt-7 mt-4 px-3 py-2 lg:px-4 lg:py-2.5 bg-white lg:text-xl sm:text-lg text-base font-mulish font-medium inline-block">Products coming soon</p>
+                        <!--========-->
+                        <div class="block lg:mt-7 mt-4 lg:mb-11 mb-20">
+                            <a class="inline-block lg:py-4 lg:px-6 px-3 py-2 font-mulish font-extrabold text-white bg-rose-550 lg:text-lg sm:text-base text-sm shadow" href="#">READ MORE</a>
+                        </div>
+                        <!--========-->
+                       <div class=" flex justify-between">
+                            <!--========-->
+                            <img height="100%" width="100%" class="lg:w-[181px] w-1/5 lg:h-[189px] object-contain" src="images/Home/6.png" alt="//">
+                            <!--========-->
+                            <img height="100%" width="100%" class="lg:w-[223px] w-1/5 lg:h-[167px] object-contain lg:mt-16 mt-5" src="images/Home/7.png" alt="//">
+                       </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 002========== -->
+            <section>
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 pt-20 grid lg:grid-cols-5  md:grid-cols-2 grid-cols-1 items-center lg:gap-20 gap-10 text-black">
+                    <!--========-->
+                    <div class="lg:col-span-2 lg:pt-10 lg:pb-20">
+                        <!--========-->
+                        <h1 class="font-playfair-display lg:text-3xl text-2xl font-black">Our Mission</h1>
+                        <!--========-->
+                        <div class="w-16 h-0.5 bg-rose-550 my-6"></div>
+                        <!--========-->
+                        <p class=" lg:text-xl text-base font-medium font-mulish">Our commitment to you is to provide your furry family members with the best, most wholesome treats in the universe! That
+                        is why we only use sustainably harvested wild seafood from Alaska to produce
+                        our treats.</p>
+                    </div>
+                    <!--========-->
+                    <div class="lg:col-span-3 h-full lg:min-h-[400px] min-h-[300px]">
+                        <!--========-->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/WLm2nF95u4E" title="How Seafood Powers Alaska's Economy: 2022 Update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 md:pt-20 pt-10 grid lg:grid-cols-10  md:grid-cols-3 grid-cols-1 items-start relative">
+                    <!--========-->
+                    <div class="lg:col-span-3 md:col-span-1 bg-[#ccedeb] md:p-8 p-12 md:rounded-xl rounded-t-xl flex justify-center z-10 lg:h-[310px] h-[220px] md:-mt-10 md:-mr-14 relative">
+                        <!--========-->
+                        <img height="100%" width="100%" class="lg:h-[360px] lg:w-[360px] h-72 w-72 absolute object-cover object-center rounded-full border-4 border-[#ebebeb] -bottom-20"
+                                src="images/Home/1.jpg" alt="//">
+                    </div>
+                    <!--========-->
+                    <div class="lg:col-span-7 md:col-span-2 bg-[#ecc152] p-5 py-10 pr-5 lg:pl-36 md:pl-20 md:rounded-xl rounded-b-xl shadow md:pt-10 pt-20">
+                        <!--========-->
+                        <h1 class=" font-semibold font-playfair-display lg:text-[40px] md:text-4xl text-3xl  ">
+                            <!--========-->
+                            <p class="text-white mb-3">About</p>
+                            <!--========-->
+                            <p class="text-black">Happy Claws Lucky Paws</p>
+                        </h1>
+                        <!--========-->
+                        <p class="text-white lg:text-lg md:text-base text-sm font-mulish py-8">We are a family-run small fisheries business that got our start on the production end of things “longlining” for Halibut
+                        in the Gulf of Alaska, seining for herring around Kodiak Island and using pots (traps) to catch crab and shrimp in
+                        Prince William Sound.</p>
+                        <!--========-->
+                        <a class="inline-block lg:text-xl md:text-lg text-base px-10 py-4 rounded-lg text-white bg-[#fe0000] font-semibold font-poppins" href="#">Read More</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 003========== -->
+            <section class="bg-cover bg-no-repeat bg-bottom lg:min-h-[900px] relative" style="background-image:url('images/Home/bg2.jpg');">
+                <!--========-->
+                <div class="absolute left-0 right-0 top-0 bottom-0 bg-[#e5f8ff] bg-opacity-70"></div>
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 py-20 mt-10 relative">
+                    <!--========-->
+                    <h1 class=" font-playfair-display font-black lg:text-3xl text-2xl text-black text-center">The Process</h1>
+                    <!--========-->
+                    <div class="grid md:grid-cols-3 grid-cols-1 justify-center relative py-10 gap-16">
+                        <!--========-->
+                        <div class=" flex md:flex-col flex-row justify-center items-center gap-7 z-20">
+                            <!--========-->
+                            <img height="100%" width="100%" class="lg:h-64 lg:w-64 h-48 w-48 object-cover object-left rounded-full border-4 border-white md:mx-auto" src="images/Home/2.jpg" alt="//">
+                            <!--========-->
+                            <p class="leading-snug  md:text-center text-2xl sm:text-3xl font-semibold font-playfair-display text-[#d97829]">Salmon <br> Seiner + Skiff</p>
+                        </div>
+                        <!--========-->
+                        <div class=" flex md:flex-col flex-row justify-center items-center gap-7 z-20">
+                            <!--========-->
+                            <img height="100%" width="100%" class="lg:h-64 lg:w-64 h-48 w-48 object-cover object-left rounded-full border-4 border-white md:mx-auto" src="images/Home/3.jpg" alt="//">
+                            <!--========-->
+                            <p class="leading-snug  md:text-center text-2xl sm:text-3xl font-semibold font-playfair-display text-[#d97829]">Hand Cutting,<br>into Cubes</p>
+                        </div>
+                        <!--========-->
+                        <div class=" flex md:flex-col flex-row justify-center items-center gap-7 z-20">
+                            <!--========-->
+                            <img height="100%" width="100%" class="lg:h-64 lg:w-64 h-48 w-48 object-cover object-left rounded-full border-4 border-white md:mx-auto" src="images/Home/4.jpg" alt="//">
+                            <!--========-->
+                            <p class="leading-snug  md:text-center text-2xl sm:text-3xl font-semibold font-playfair-display text-[#d97829]">Freeze-Dried<br>Cubes</p>
+                        </div>
+                        <!--========-->
+                        <div>
+                           <img height="100%" width="100%" class="transform rotate-90 md:rotate-0 absolute top-0 md:bottom-40 bottom-16 md:left-0 sm:-left-4 -left-24 md:right-0  md:w-1/2 sm:w-3/4 w-full h-auto m-auto z-10" src="images/Home/10.png" alt="//">
+                        </div>
+                    </div>
+                    <!--========-->
+                    <p class=" font-poppins text-black text-center lg:text-base text-sm">We purchase fresh salmon directly from fishermen. This is the same salmon destined for<br class="md:block hidden">
+                    supermarkets and restaurants. Some businesses would say this is “human-grade.” We say, “it’s the<br class="md:block hidden">
+                    way it should be.” Some businesses use the frames (skeletons), collars, fins and skin and call it<br class="md:block hidden">
+                    salmon. We use only salmon fillets, nothing else.</p>
+                    <!--========-->
+                    <div class=" flex items-center justify-center mt-5">
+                        <a class="inline-block lg:text-xl md:text-lg text-base px-10 py-4 rounded-lg text-white bg-[#fe0000] font-semibold font-poppins" href="#">Read More</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 004========== -->
+            <section class="bg-[#fdfaf5]">
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 pt-20 grid md:grid-cols-2 grid-cols-1  gap-8 text-black">
+                    <!--========-->
+                    <div>
+                        <!--========-->
+                        <div>
+                            <!--========-->
+                            <img height="100%" width="100%" class="w-full h-auto" src="images/Home/5.jpg" alt="//">
+                        </div>
+                        <!--========-->
+                        <div class="hidden md:flex items-center sm:gap-8 gap-4 sm:p-6 p-4 bg-white shadow-md rounded mt-8">
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <img height="100%" width="100%" class="min-w-[60px] w-auto h-auto" src="images/icons/4.png" alt="//">
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p class=" lg:text-2xl text-xl font-bold font-playfair-display mb-2">Additives</p>
+                                <!--========-->
+                                <p class=" lg:text-base text-sm font-medium font-mulish">The natural color of farmed salmon flesh is grey.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class=" flex flex-col justify-between ">
+                        <!--========-->
+                        <div>
+                            <!--========-->
+                            <h1 class="font-playfair-display lg:text-3xl text-2xl font-black">Why Wild Matters – Wild vs Farmed</h1>
+                            <!--========-->
+                            <div class="w-16 h-0.5 bg-rose-550 my-6"></div>
+                            <!--========-->
+                            <p class=" lg:text-xl text-base font-medium font-mulish">There are many reasons why wild caught salmon should be preferred over farmed salmon. We believe it is important to be
+                            well informed, so please bear with us as the following contains a lot of information.</p>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <!--========-->
+                            <div class=" flex items-center sm:gap-8 gap-4 sm:p-6 p-4 bg-white shadow-md rounded mt-4">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <img height="100%" width="100%" class="min-w-[60px] w-auto h-auto" src="images/icons/1.png" alt="//">
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" lg:text-2xl text-xl font-bold font-playfair-display mb-2">Salmon Feed</p>
+                                    <!--========-->
+                                    <p class=" lg:text-base text-sm font-medium font-mulish">Norwegian salmon farms produce over 50% of farmed
+                                        salmon sold worldwide.</p>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div class=" flex items-center sm:gap-8 gap-4 sm:p-6 p-4 bg-white shadow-md rounded mt-4">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <img height="100%" width="100%" class="min-w-[60px] w-auto h-auto" src="images/icons/2.png" alt="//">
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" lg:text-2xl text-xl font-bold font-playfair-display mb-2">Sea Lice Treatment</p>
+                                    <!--========-->
+                                    <p class=" lg:text-base text-sm font-medium font-mulish">The most prevalent issue for salmon farms is sea lice.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div class=" flex items-center sm:gap-8 gap-4 sm:p-6 p-4 bg-white shadow-md rounded mt-4">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <img height="100%" width="100%" class="min-w-[60px] w-auto h-auto" src="images/icons/2.png" alt="//">
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" xl:text-2xl lg:text-xl text-sm font-bold font-playfair-display mb-2">
+                                        Pharmaceuticals(antibiotics/vaccines)</p>
+                                    <!--========-->
+                                    <p class=" lg:text-base text-sm font-medium font-mulish">There are many diseases prevalent in farmed fish due to
+                                        being reared in a pen.</p>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div class=" flex md:hidden items-center sm:gap-8 gap-4 sm:p-6 p-4 bg-white shadow-md rounded mt-4">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <img height="100%" width="100%" class="min-w-[60px] w-auto h-auto" src="images/icons/4.png" alt="//">
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" lg:text-2xl text-xl font-bold font-playfair-display mb-2">Additives</p>
+                                    <!--========-->
+                                    <p class=" lg:text-base text-sm font-medium font-mulish">The natural color of farmed salmon flesh is grey.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 flex items-center flex-col justify-center pb-20 pt-8 relative">
+                    <!--========-->
+                    <div class="w-0.5 md:h-24 h-10 rounded-full bg-rose-550"></div>
+                    <!--========-->
+                    <div class="block mt-5">
+                        <a class="inline-block lg:py-4 lg:px-6 px-3 py-2 font-mulish font-extrabold text-white bg-rose-550 lg:text-lg sm:text-base text-sm shadow"
+                            href="#">READ MORE</a>
+                    </div>
+                    <!--========-->
+                    <div class=" flex justify-between items-end absolute bottom-0 left-0 right-0">
+                        <!--========-->
+                        <img height="100%" width="100%" class="lg:w-[181px] w-1/5 lg:h-[189px] object-contain" src="images/Home/6.png"
+                            alt="//">
+                        <!--========-->
+                        <img height="100%" width="100%" class="lg:w-[223px] w-1/5 lg:h-[167px] object-contain lg:mt-16 mt-5"
+                            src="images/Home/7.png" alt="//">
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 004========== -->
+            <section class="relative bg-white py-10">
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 py-20 mt-10">
+                    <!--========-->
+                    <div>
+                        <!--========-->
+                        <h1 class=" font-playfair-display font-black lg:text-3xl text-2xl text-black text-center">Our Packages</h1>
+                        <!--========-->
+                        <div class="h-0.5 w-16 mx-auto bg-rose-550 mt-5"></div>
+                    </div>
+                    <!--========-->
+                    <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-2 gap-y-40 pt-44 font-lato relative z-10">
+                        <!--========-->
+                        <div class="bg-white border-4 group hover:outline border-black p-4 rounded-xl text-center min-h-[370px] flex flex-col items-center justify-end relative">
+                            <!--========-->
+                            <div class="group-hover:border-t-[8px] group-hover:border-l-[8px] absolute lg:group-hover:top-[-84px] lg:top-[-79px] sm:group-hover:top-[-100px] sm:top-[-95px] group-hover:top-[-116px] top-[-111px] pt-5 pl-5 transform rotate-45 border-t-4 border-l-4 border-black rounded-tl-md bg-white">
+                                <!--========-->
+                                <img height="100%" width="100%" class="lg:h-32 sm:h-40 sm:w-40 w-48 h-48 lg:w-32 object-cover" src="images/Home/6.jpg" alt="//">
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg uppercase font-bold text-black mb-4">aliquip ex ea co</p>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg text-[#f74e12] font-bold">$22.67</p>
+                                <!--========-->
+                                <div class=" flex items-center justify-center space-x-1 my-4">
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <a class="my-2 inline-block lg:text-sm text-xs text-white font-black py-4 px-8 rounded-full bg-[#f74e12]" href="#">VIEW PACKAGE</a>
+                            </div>
+                        </div>
+                        <!--========-->
+                        <div class="bg-white border-4 group hover:outline border-black p-4 rounded-xl text-center min-h-[370px] flex flex-col items-center justify-end relative">
+                            <!--========-->
+                            <div class="group-hover:border-t-[8px] group-hover:border-l-[8px] absolute lg:group-hover:top-[-84px] lg:top-[-79px] sm:group-hover:top-[-100px] sm:top-[-95px] group-hover:top-[-116px] top-[-111px] pt-5 pl-5 transform rotate-45 border-t-4 border-l-4 border-black rounded-tl-md bg-white">
+                                <!--========-->
+                                <img height="100%" width="100%" class="lg:h-32 sm:h-40 sm:w-40 w-48 h-48 lg:w-32 object-cover" src="images/Home/8.jpg" alt="//">
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg uppercase font-bold text-black mb-4">Duis aute irure</p>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg text-[#f74e12] font-bold">$22.67</p>
+                                <!--========-->
+                                <div class=" flex items-center justify-center space-x-1 my-4">
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <a class="my-2 inline-block lg:text-sm text-xs text-white font-black py-4 px-8 rounded-full bg-[#f74e12]" href="#">VIEW PACKAGE</a>
+                            </div>
+                        </div>
+                        <!--========-->
+                        <div class="bg-white border-4 group hover:outline border-black p-4 rounded-xl text-center min-h-[370px] flex flex-col items-center justify-end relative">
+                            <!--========-->
+                            <div class="group-hover:border-t-[8px] group-hover:border-l-[8px] absolute lg:group-hover:top-[-84px] lg:top-[-79px] sm:group-hover:top-[-100px] sm:top-[-95px] group-hover:top-[-116px] top-[-111px] pt-5 pl-5 transform rotate-45 border-t-4 border-l-4 border-black rounded-tl-md bg-white">
+                                <!--========-->
+                                <img height="100%" width="100%" class="lg:h-32 sm:h-40 sm:w-40 w-48 h-48 lg:w-32 object-cover" src="images/Home/6.jpg" alt="//">
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg uppercase font-bold text-black mb-4">Excepteur sint</p>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg text-[#f74e12] font-bold">$22.67</p>
+                                <!--========-->
+                                <div class=" flex items-center justify-center space-x-1 my-4">
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <a class="my-2 inline-block lg:text-sm text-xs text-white font-black py-4 px-8 rounded-full bg-[#f74e12]" href="#">VIEW PACKAGE</a>
+                            </div>
+                        </div>
+                        <!--========-->
+                        <div class="bg-white border-4 group hover:outline border-black p-4 rounded-xl text-center min-h-[370px] flex flex-col items-center justify-end relative">
+                            <!--========-->
+                            <div class="group-hover:border-t-[8px] group-hover:border-l-[8px] absolute lg:group-hover:top-[-84px] lg:top-[-79px] sm:group-hover:top-[-100px] sm:top-[-95px] group-hover:top-[-116px] top-[-111px] pt-5 pl-5 transform rotate-45 border-t-4 border-l-4 border-black rounded-tl-md bg-white">
+                                <!--========-->
+                                <img height="100%" width="100%" class="lg:h-32 sm:h-40 sm:w-40 w-48 h-48 lg:w-32 object-cover" src="images/Home/12.jpg" alt="//">
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg uppercase font-bold text-black mb-4">dolore magna aliq</p>
+                                <!--========-->
+                                <p class="lg:text-xl text-lg text-[#f74e12] font-bold">$22.67</p>
+                                <!--========-->
+                                <div class=" flex items-center justify-center space-x-1 my-4">
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <!--========-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <a class="my-2 inline-block lg:text-sm text-xs text-white font-black py-4 px-8 rounded-full bg-[#f74e12]" href="#">VIEW PACKAGE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--========-->
+                <div>
+                    <!--========-->
+                    <!--========-->
+                    <img height="100%" width="100%" class="absolute left-0 top-0 lg:w-auto w-1/5 h-full" src="images/Home/bg5.png" alt="//">
+                    <!--========-->
+                    <!--========-->
+                    <img height="100%" width="100%" class="absolute right-0 top-0 lg:w-auto w-1/5 h-full" src="images/Home/bg6.png" alt="//">
+                </div>
+            </section>
+            <!-- ==========section 003========== -->
+            <section class="bg-cover bg-center bg-no-repeat  min-h-[420px] relative"
+                style="background-image:url('images/Home/bg3.jpg');">
+                <!--========-->
+                <div></div>
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full flex flex-col justify-center px-5 sm:px-0 py-20 mt-10 relative">
+                    <!--========-->
+                    <h1 class="lg:text-[40px] md:text-4xl text-3xl font-semibold font-playfair-display text-white">Our Product</h1>
+                    <!--========-->
+                    <p class="lg:w-[30%] sm:w-2/5 w-3/4 lg:text-lg font-medium md:text-base text-sm font-mulish text-white lg:my-9 my-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium nisi ut aliquip ex ea
+                    commodo.</p>
+                    <!--========-->
+                    <p class="lg:text-[44px] md:text-[40px] text-4xl font-bold font-playfair-display text-[#ecc152] font-poppins">Coming Soon</p>
+                </div>
+            
+            </section>
+            <!-- ==========section 004========== -->
+            <section class="bg-[#e5f8ff]">
+                <!--========-->
+                <div class=" grid md:grid-cols-2 grid-cols-1 items-center">
+                    <!--========-->
+                    <div class="h-full">
+                        <!--========-->
+                        <img height="100%" width="100%" class="w-full h-full" src="images/home/11.jpg" alt="//">
+                    </div>
+                    <!--========-->
+                    <div class="xl:px-20 py-10 md:px-10 px-4 xl:w-11/12 2xl:w-3/4">
+                        <!--========-->
+                        <h1 class=" font-playfair-display font-semibold text-[#57462b] lg:text-[40px] md:text-4xl text-3xl md:mb-14 mb-5">Stories</h1>
+                        <!--========-->
+                        <p class=" font-mulish font-semibold text-black">“ I rescued Pedey in 2014. He was a scrappy little guy that likely picked a fight with a coyote in Southern California.
+                        And, he had puncture wounds and plenty of scars to prove it when I adopted him. Not quite three years later, Pedey was
+                        diagnosed with heart failure (HF) and degenerative mitral valve disease (DMVD).* My little guy now had a cardiologist!
+                        She stressed the importance of a low-sodium diet...”</p>
+                        <!--========-->
+                        <p class="md:mt-8 mt-3 font-mulish font-semibold text-[#2ca3bd]">Pedey-Denali</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 003========== -->
+            <section class="bg-cover bg-center bg-no-repeat  lg:min-h-[900px] relative"
+                style="background-image:url('images/Home/bg4.jpg');">
+                <!--========-->
+                <div class=" container xl:max-w-[1170px] mx-auto h-full px-5 sm:px-0 py-20 mt-10 relative">
+                    <!--========-->
+                    <h1 class=" font-playfair-display font-black lg:text-3xl text-2xl text-black text-center">FAQ’s</h1>
+                    <!--========-->
+                    <div class="h-0.5 w-16 mx-auto bg-rose-550 mt-5"></div>
+                    <!--========-->
+                    <div class="grid md:grid-cols-2 grid-cols-1 py-10 gap-5">
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class="w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>How many treats come in a bag?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>How many treats can I give my pet per day?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>Why is there variation in the color and size of the treats?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>Do these treats have skin on them or are they skinless?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>Are your treats made in Alaska?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div  class="bg-white border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>Is salmon good for dogs and cats?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--========-->
+                        <div class="md:col-span-2 bg-[#f7dd4a] border-2 border-gray-500 rounded-3xl lg:px-6 px-4 lg:py-3.5 py-2.5">
+                            <!--========-->
+                            <button class=" w-full flex items-center justify-between font-lato xl:text-lg sm:text-base text-sm font-black text-left">
+                                <p>Is salmon good for dogs and cats?</p>
+                                <!--========-->
+                                <svg xmlns="http://www.w3.org/2000/svg"  class="h-5 w-5 text-rose-550" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </button>
+                            <!--========-->
+                            <div class="pt-4 pb-2">
+                                <p class=" font-lato lg:text-base sm:text-sm text-xs">Yes! Salmon is a good source of omega-3 fatty acids, which support the immune system and may decrease inflammation. It
+                                is also good for your pets’ skin and coat. Salmon is commonly found in high-quality pet foods as a source of protein. It
+                                is a good alternative protein if a dog or cat is allergic to other common protein sources, such as chicken.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+        </main>
+        <!--====================footer====================-->
+        <footer class="bg-[#dcddde]">
+            <!--========-->
+            <div class="container xl:max-w-[1170px] mx-auto px-5 sm:px-0 py-10 grid md:grid-cols-4 grid-cols-1 md:gap-5 gap-10 text-black font-ibm-plex-sans">
+                <!--========-->
+                <div>
+                    <!--====logo====-->
+                    <a href="/">
+                        <!--========-->
+                        <img height="100%" width="100%" class="w-auto h-auto" src="images/Logo/logo.png" alt="//">
+                    </a>
+                </div>
+                <!--========-->
+                <div>
+                    <!--========-->
+                    <ul class="space-y-3">
+                        <!--========-->
+                        <li class=" uppercase font-bold text-lg mb-7"> Menu</li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="/"> Home</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="why_wild_matters.html"> Why Wild Matters</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="the-process.html">The Process</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="about_us.html">About Us</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="faq.html">FAQs</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class="text-base hover:underline" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--========-->
+                <div>
+                    <!--========-->
+                    <ul class="space-y-3">
+                        <!--========-->
+                        <li class=" uppercase font-bold text-lg mb-7"> CONTACT US</li>
+                        <!--========-->
+                        <li class=" flex items-center gap-4 text-sm">
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-4 w-4" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div>
+                                <!--========-->
+                                <p>6221 Petersburg Street</p>
+                                <!--========-->
+                                <p>Anchorage, AK 99507 USA</p>
+                            </div>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <!--========-->
+                            <a  class=" flex items-center gap-4 text-sm" href="tel:907-563-1387">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                     <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                               
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p>Call Us</p>
+                                    <!--========-->
+                                    <p>907-563-1387</p>
+                                </div>
+                            </a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <!--========-->
+                            <a  class=" flex items-center gap-4 text-sm" href="mailto:info@happyclaws-luckypaws.com">
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-4 w-4" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p>E mail Us</p>
+                                    <!--========-->
+                                    <p>info@happyclaws-luckypaws.com</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--========-->
+                <div class=" flex md:justify-end">
+                    <!--========-->
+                    <ul class="space-y-3">
+                        <!--========-->
+                        <li class=" uppercase font-bold text-lg mb-7">FOLLOW US</li>
+                        <!--========-->
+                        <li>
+                            <!--========-->
+                            <a  class=" flex items-center gap-4 text-sm" target="_blank" href="https://www.facebook.com/">
+                                <!--========-->
+                                <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class=" w-4 h-4" fill="currentColor" viewBox="0 0 320 512">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p>Like us on</p>
+                                    <!--========-->
+                                    <p>FACEBOOK</p>
+                                </div>
+                            </a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <!--========-->
+                            <a  class=" flex items-center gap-4 text-sm" target="_blank" href="https://twitter.com/">
+                                <!--========-->
+                                <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class=" w-4 h-4" fill="currentColor" viewBox="0 0 512 512">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p>Follow us on</p>
+                                    <!--========-->
+                                    <p>TWITTER</p>
+                                </div>
+                            </a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <!--========-->
+                            <a  class=" flex items-center gap-4 text-sm" target="_blank" href="https://www.linkedin.com/">
+                                <!--========-->
+                                <div class=" h-8 w-8 flex items-center justify-center rounded-full bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class=" w-4 h-4" fill="currentColor"  viewBox="0 0 448 512">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p>Follow us on</p>
+                                    <!--========-->
+                                    <p>LINKEDIN</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--========-->
+            <div class="container xl:max-w-[1170px] mx-auto px-5 sm:px-0 py-10 text-black font-ibm-plex-sans border-t-2 border-white">
+                <!--========-->
+                <p class="lg:text-sm text-xs text-center">Copyright © 2022 All Rights Reserved</p>
+            </div>
+        </footer>
+        
+        <!---->
+        <script src="js/alpine.min.js" defer></script>
+    </body>
+</html>
