@@ -34,7 +34,7 @@
                     <img height="100%" width="100%" class="lg:w-auto w-4/5 h-auto" src="images/Logo/logo.png" alt="//">
                 </a>
                 <!--====menu====-->
-                <ul class="hidden md:flex text-black lg:space-x-7 space-x-4 font-medium font-mulish lg:text-lg sm:text-base text-sm">
+                <ul class="hidden lg:flex text-black lg:space-x-7 space-x-4 font-medium font-mulish lg:text-lg sm:text-base text-sm">
                     <!---->
                     <li>
                         <a class="p-2 bg-rose-550 text-white" href="/">Home</a>
@@ -42,6 +42,10 @@
                     <!---->
                     <li>
                         <a class="p-2 hover:text-rose-550" href="why_wild_matters.html">Why Wild Matters</a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a class="p-2 hover:text-rose-550" href="the_process.html">The Process</a>
                     </li>
                     <!---->
                     <li>
@@ -57,7 +61,7 @@
                     </li>
                 </ul>
                 <!--====Humberger menu====-->
-                <div @click.away="humberger=false" class="block md:hidden" x-data="{humberger: false}">
+                <div @click.away="humberger=false" class="block lg:hidden" x-data="{humberger: false}">
                     <!--====menu button====-->
                     <button @click.prevent="humberger=!humberger" aria-label="Mobile Menu button"
                         class="outline-none text-black p-1">
@@ -91,6 +95,10 @@
                                 <!---->
                                 <li>
                                     <a class="hover:text-rose-550" href="why_wild_matters.html">Why Wild Matters</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="hover:text-rose-550" href="the_process.html">The Process</a>
                                 </li>
                                 <!---->
                                 <li>
